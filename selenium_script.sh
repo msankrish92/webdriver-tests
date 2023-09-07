@@ -86,8 +86,6 @@ else
     sudo dpkg -i google-chrome-stable_114.0.5735.198-1_amd64.deb
 fi
 
-
-cd webdriver-tests
 mvn clean test 
 aws s3 sync reports/ s3://reports-ubuntu-devops
 
